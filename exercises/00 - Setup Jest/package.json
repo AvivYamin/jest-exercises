@@ -3,6 +3,14 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "test": "echo \"This is part of the jest setup\" && exit 1"
+    "test": "jest --watch"
+  },
+  "description": "For this exercise the function to test and the test have already been written.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.4.5"
   }
 }

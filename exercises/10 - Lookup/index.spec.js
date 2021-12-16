@@ -29,6 +29,19 @@ const users = [
 // lookup()
 const lookup = (login, property) => {
   // START -- THIS IS WHERE YOUR CODE GOES
+  let user;
+  switch (property){
+    case "likes":
+      user = users.filter((user) => user.login === login);
+      if(user.length < 1) throw new Error("/Could not find user/");
+      return user[0].likes;
+    case "lastName":
+      user = users.filter((user) => user.login === login);
+      if(user.length < 1) throw new Error("/Could not find property/");
+      return user[0].lastName;
+    default:
+      throw new Error("/Could not find property/");
+  }
   // END
 };
 
